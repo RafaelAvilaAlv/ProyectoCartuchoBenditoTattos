@@ -98,8 +98,9 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+	background: #0b0b0b; /* negro tattoo */
 	}
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -1913,10 +1914,12 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		button.primary,
+		
 		.button.primary {
-			background-color: #ffffff;
-			color: #312450 !important;
-		}
+	background-color: #b30000; /* rojo sangre */
+	color: #ffffff;
+}
+
 
 			input[type="submit"].primary:after,
 			input[type="reset"].primary:after,
@@ -1975,6 +1978,13 @@ input, select, textarea {
 				.button:hover:active:after {
 					opacity: 0.1;
 				}
+
+
+				.button.primary:hover {
+	background-color: #ff1a1a; /* rojo intenso al pasar el mouse */
+	color: #ffffff;
+}
+
 
 /* Features */
 
@@ -3240,24 +3250,27 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+		background-color: #0f0f0f; /* negro */
 		}
+
 
 		.wrapper.style1-alt {
 			background-color: #493382;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #111111;
 		}
+
 
 		.wrapper.style2-alt {
 			background-color: #3e4094;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #1a1a1a;
 		}
+
 
 		.wrapper.style3-alt {
 			background-color: #953d75;
