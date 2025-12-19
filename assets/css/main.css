@@ -3247,32 +3247,41 @@ input, select, textarea {
 
 			/* ===== WRAPPERS - ESTILO TATTOO ===== */
 
+/* ===== WRAPPERS – TATTOO STYLE ===== */
+
 .wrapper.alt {
-	background-color: #261c3e;
+	background-color: #2b1e44;
 }
 
+/* CONTACTO */
 .wrapper.style1 {
-	background-color: #0f0f0f;
+	background-color: #5b3fa3; /* morado Hyperspace */
+	color: #ffffff;
 }
 
+/* FOOTER */
 .wrapper.style1-alt {
-	background-color: #493382;
+	background-color: #3a2a5c;
 }
 
+/* ESTUDIO */
 .wrapper.style2 {
-	background-color: #111111;
+	background-color: #0f0f0f; /* negro tattoo */
 }
 
+/* SIDEBAR */
 .wrapper.style2-alt {
-	background-color: #3e4094;
+	background-color: #2e1f4f;
 }
 
+/* ESTILOS */
 .wrapper.style3 {
 	background-color: #1a1a1a;
 }
 
+/* EXTRA */
 .wrapper.style3-alt {
-	background-color: #953d75;
+	background-color: #7a2d55;
 }
 
 
@@ -3920,3 +3929,14 @@ input, select, textarea {
 			}
 
 		}
+
+
+		/* CONTACT INFO VISIBILITY */
+#three .contact li span,
+#three .contact li a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+#three .contact h3 {
+	color: #ffffff;
+}
