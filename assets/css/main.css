@@ -3248,37 +3248,31 @@ input, select, textarea {
 			/* ===== WRAPPERS - ESTILO TATTOO ===== */
 
 .wrapper.alt {
-	background-color: #0b0b0b; /* negro profundo */
+	background-color: #261c3e;
 }
 
-/* Inicio / Hero */
 .wrapper.style1 {
-	background-color: #0f0f0f; /* negro elegante */
+	background-color: #0f0f0f;
 }
 
-/* Alterno de style1 */
 .wrapper.style1-alt {
-	background-color: #1a1a1a; /* gris oscuro */
+	background-color: #493382;
 }
 
-/* Estudio / Información */
 .wrapper.style2 {
-	background-color: #111111; /* negro suave */
+	background-color: #111111;
 }
 
-/* Alterno de style2 */
 .wrapper.style2-alt {
-	background-color: #2b0000; /* rojo sangre oscuro */
+	background-color: #3e4094;
 }
 
-/* Estilos / Servicios */
 .wrapper.style3 {
-	background-color: #1a1a1a; /* gris tattoo */
+	background-color: #1a1a1a;
 }
 
-/* Alterno de style3 */
 .wrapper.style3-alt {
-	background-color: #3a0000; /* rojo vino */
+	background-color: #953d75;
 }
 
 
