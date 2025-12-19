@@ -1983,7 +1983,7 @@ input, select, textarea {
 				.button.primary:hover {
 	background-color: #ff1a1a; /* rojo intenso al pasar el mouse */
 	color: #ffffff;
-}
+				}
 
 
 /* Features */
@@ -3245,36 +3245,42 @@ input, select, textarea {
 
 			}
 
-		.wrapper.alt {
-			background-color: #261c3e;
-		}
+			/* ===== WRAPPERS - ESTILO TATTOO ===== */
 
-		.wrapper.style1 {
-		background-color: #0f0f0f; /* negro */
-		}
+.wrapper.alt {
+	background-color: #0b0b0b; /* negro profundo */
+}
 
+/* Inicio / Hero */
+.wrapper.style1 {
+	background-color: #0f0f0f; /* negro elegante */
+}
 
-		.wrapper.style1-alt {
-			background-color: #493382;
-		}
+/* Alterno de style1 */
+.wrapper.style1-alt {
+	background-color: #1a1a1a; /* gris oscuro */
+}
 
-		.wrapper.style2 {
-			background-color: #111111;
-		}
+/* Estudio / Información */
+.wrapper.style2 {
+	background-color: #111111; /* negro suave */
+}
 
+/* Alterno de style2 */
+.wrapper.style2-alt {
+	background-color: #2b0000; /* rojo sangre oscuro */
+}
 
-		.wrapper.style2-alt {
-			background-color: #3e4094;
-		}
+/* Estilos / Servicios */
+.wrapper.style3 {
+	background-color: #1a1a1a; /* gris tattoo */
+}
 
-		.wrapper.style3 {
-			background-color: #1a1a1a;
-		}
+/* Alterno de style3 */
+.wrapper.style3-alt {
+	background-color: #3a0000; /* rojo vino */
+}
 
-
-		.wrapper.style3-alt {
-			background-color: #953d75;
-		}
 
 		.wrapper.fullscreen {
 			display: -moz-flex;
