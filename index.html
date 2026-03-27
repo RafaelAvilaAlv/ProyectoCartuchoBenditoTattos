@@ -255,6 +255,34 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+
+	<div id="chatbox">
+  <div id="messages"></div>
+  <input type="text" id="userInput" placeholder="Escribe..." />
+  <button onclick="sendMessage()">Enviar</button>
+</div>
+
+<script>
+async function sendMessage() {
+  const input = document.getElementById("userInput");
+  const message = input.value;
+
+  const res = await fetch("http://localhost:8080/chat", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ message })
+  });
+
+  const data = await res.json();
+  document.getElementById("messages").innerHTML +=
+    `<p><b>Tú:</b> ${message}</p>
+     <p><b>Bot:</b> ${data.reply}</p>`;
+
+  input.value = "";
+}
+</script>
+
+
 </body>
 
 </html>
