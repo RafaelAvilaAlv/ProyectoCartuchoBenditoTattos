@@ -256,31 +256,60 @@
 	<script src="assets/js/main.js"></script>
 
 
-	<div id="chatbox">
-  <div id="messages"></div>
-  <input type="text" id="userInput" placeholder="Escribe..." />
-  <button onclick="sendMessage()">Enviar</button>
-</div>
+	<script src="assets/js/main.js"></script>
 
-<script>
-async function sendMessage() {
-  const input = document.getElementById("userInput");
-  const message = input.value;
+	<!-- BOTÓN WHATSAPP -->
+	<a href="https://wa.me/593988244548" target="_blank" rel="noopener noreferrer" style="
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+">
+		💬 WhatsApp
+	</a>
 
-  const res = await fetch("http://localhost:8080/chat", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({ message })
-  });
+	<!-- CHAT SIMPLE -->
+	<div id="chat-mini" style="
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 250px;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 13px;
+  z-index: 9999;
+">
+		<input id="msg" placeholder="Pregunta algo..." style="width:100%; margin-bottom:5px;">
+		<button onclick="responder()" style="width:100%;">Enviar</button>
+		<p id="respuesta"></p>
+	</div>
 
-  const data = await res.json();
-  document.getElementById("messages").innerHTML +=
-    `<p><b>Tú:</b> ${message}</p>
-     <p><b>Bot:</b> ${data.reply}</p>`;
+	<script>
+		function botResponse(msg) {
+			msg = msg.toLowerCase();
 
-  input.value = "";
-}
-</script>
+			if (msg.includes("precio")) return "Los tatuajes van desde $20 💉";
+			if (msg.includes("ubicacion")) return "Estamos en Cuenca 📍";
+			if (msg.includes("cita")) return "Agenda aquí 👉 https://wa.me/593988244548";
+
+			return "Escríbenos al WhatsApp 📲";
+		}
+
+		function responder() {
+			const msg = document.getElementById("msg").value;
+			const res = botResponse(msg);
+			document.getElementById("respuesta").innerText = res;
+		}
+	</script>
 
 
 </body>
